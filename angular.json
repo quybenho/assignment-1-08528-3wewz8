@@ -27,6 +27,7 @@
               "src/css/index.css",
               "src/css/main.css",
               "src/css/util.css",
+              "src/css/detail.css",
               "src/css/css.css"
             ],
             "scripts": []

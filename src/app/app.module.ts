@@ -10,9 +10,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductListComponent } from './product-list/product-list.component';
 import { NewsComponent } from './home/news/news.component';
 import { ProductNewsComponent } from './product-news/product-news.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpClientModule, AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, ProductListComponent, NewsComponent, ProductNewsComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, ProductListComponent, NewsComponent, ProductNewsComponent, ProductDetailComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
