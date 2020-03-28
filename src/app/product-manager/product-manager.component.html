@@ -1,9 +1,9 @@
  
-<div class="container">
-<div class="row" style="margin-top: 100px">
-  <table class="table table-striped" border="1"> 
-    <thead>
-    <tr>
+
+<div class="row" style="margin:25px 0px 0px 0px; ">
+  <table class="table table-striped"  style="margin-left:50px;margin-right:50px;" > 
+    <thead class="thead-dark" >
+    <tr >
       <th scope="col">Images</th>
       <th scope="col">Name</th>
       <th scope="col">Price</th>
@@ -15,7 +15,7 @@
     </thead>
     <tbody>
     <tr *ngFor="let product of products">
-      <td><img width="50px" height="50px" src="{{product.image}}" alt=""></td>
+      <td><img  src="{{product.image}}" width="400" height="236" alt=""></td>
       <td>{{product.name}}</td>
       <td>{{product.price}}</td>
       <td>{{product.fueltype ? 'In stock': 'petrol'}}</td>
@@ -26,7 +26,7 @@
     </tbody>
   </table>
 </div>
-</div>
+
 
  
  
