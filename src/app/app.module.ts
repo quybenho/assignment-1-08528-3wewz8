@@ -11,9 +11,11 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductNewsComponent } from './product-news/product-news.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
+import { ProductAddComponent } from './product-add/product-add.component';
+import { ProductEditComponent } from './product-edit/product-edit.component';
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpClientModule, AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, ProductListComponent, ProductNewsComponent, ProductDetailComponent, ProductManagerComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, ProductListComponent, ProductNewsComponent, ProductDetailComponent, ProductManagerComponent, ProductAddComponent, ProductEditComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
