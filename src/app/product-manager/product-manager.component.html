@@ -1,0 +1,33 @@
+ 
+<div class="container">
+<div class="row" style="margin-top: 100px">
+  <table class="table table-striped" border="1"> 
+    <thead>
+    <tr>
+      <th scope="col">Images</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Status</th>
+      <th scope="col">Desc</th>
+      <th scope="col">Delete</th>
+      <th scope="col">Edit</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of products">
+      <td><img width="50px" height="50px" src="{{product.image}}" alt=""></td>
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.fueltype ? 'In stock': 'petrol'}}</td>
+      <td>{{product.desc}}</td>
+      <td><button class="btn btn-primary" (click)="removeProduct(product.id)">Delete</button></td>
+      <td><button class="btn btn-primary" routerLink="/product/edit/{{product.id}}" >edit</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+ 
+ 
+ 

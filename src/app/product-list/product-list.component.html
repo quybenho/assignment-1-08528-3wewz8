@@ -11,7 +11,7 @@
 
 	<div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
 		<div class="card h-100">
-			<a href="#"><img class="card-img-top" [src]="product.image" alt=""></a>
+			<a routerLink="/product/{{product.id}}"><img class="card-img-top" [src]="product.image" alt=""></a>
 				<div class="card-body">
 					<h4 class="card-title">
 						<a href="#">{{product.name}}</a>
@@ -20,11 +20,7 @@
 					<p class="card-text">{{product.desc}}</p>
 					<p class="card-text">{{product.fueltype ? 'xăng': 'petrol'}}</p>
 				</div>
-				<div class="card-footer">
 				
-					<button class="btn btn-primary" routerLink="/product/{{product.id}}">Chi tiết</button>
-		
-				</div>
 		</div>
 	</div>
 </div>
