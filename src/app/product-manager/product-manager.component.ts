@@ -11,7 +11,7 @@ import { ActivatedRoute, Router } from "@angular/router";
 export class ProductManagerComponent implements OnInit {
   selected: Product;
   products: Product[];
-  page =2 ;
+  page =1 ;
   pageSize = 7;
   currentRate = 8;
 
