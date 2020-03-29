@@ -25,6 +25,7 @@
             "styles": [
               "src/styles.css",
               "src/css/index.css",
+               "src/css/footer.css",
               "src/css/main.css",
               "src/css/util.css",
               "src/css/detail.css",
