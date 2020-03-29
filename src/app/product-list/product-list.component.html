@@ -7,23 +7,30 @@
 			</ol>
 		</nav>
 	</div>
-  <div class="row" style="margin-top: 100px;">
+	<div class="row" style="margin-top: 100px;">
 
-	<div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
-		<div class="card h-100" routerLink="/product/{{product.id}}">
-			<a ><img class="card-img-top" [src]="product.image" alt=""></a>
-				<div class="card-body">
-					<h4 class="card-title">
-						<a href="#">{{product.name}}</a>
-					</h4>
-					<h5>${{product.price}}</h5>
-					<p class="card-text">{{product.desc}}</p>
-					<p class="card-text">{{product.fueltype ? 'xăng': 'petrol'}}</p>
-				</div>
-				
+		<div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
+			<div class="card h-100" >
+				<a><img class="card-img-top" routerLink="/product/{{product.id}}" [src]="product.image" alt=""></a>
+					<div class="card-body">
+						<h4 class="card-title">
+							<a href="#">{{product.name}}</a>
+						</h4>
+						<h5>${{product.price}}</h5>
+						<p class="card-text">{{product.desc}}</p>
+						<p class="card-text">{{product.fueltype ? 'xăng': 'petrol'}}</p>
+
+
+						<ngb-rating [(rate)]="currentRate">
+							<ng-template let-fill="fill" let-index="index">
+								<span class="star" [class.filled]="fill === 100" [class.bad]="index < 3">&#9733;</span>
+							</ng-template>
+						</ngb-rating>
+						<hr>
+						<pre>Rate: <b>{{currentRate}}</b></pre>
+					</div>
+
+			</div>
 		</div>
 	</div>
 </div>
-</div>
-
-
