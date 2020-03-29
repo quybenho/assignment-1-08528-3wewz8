@@ -11,6 +11,8 @@ import { ActivatedRoute, Router } from "@angular/router";
 export class ProductManagerComponent implements OnInit {
   selected: Product;
   products: Product[];
+  page =2 ;
+  pageSize = 7;
 
   constructor(
     private productService: ProductService,
@@ -25,6 +27,7 @@ export class ProductManagerComponent implements OnInit {
   getProducts() {
     this.route.params.subscribe(param => {
       this.productService.getProducts().subscribe(data => {
+        console.log(data);
         this.products = data;
       });
     });
