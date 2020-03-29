@@ -6,10 +6,10 @@
   <table class="table table-striped"  style="margin-left:50px;margin-right:50px;" > 
     <thead class="thead-dark" >
     <tr >
-      <th scope="col">Images</th>
-      <th scope="col">Name</th>
+      <th scope="col">IMAGES</th>
+      <th scope="col">NAME</th>
       <th scope="col">Price</th>
-      <th scope="col">Status</th>
+      <th scope="col">fueltype</th>
       <th scope="col">Desc</th>
       <th scope="col">Delete</th>
       <th scope="col">Edit</th>
@@ -23,7 +23,7 @@
       <td>{{product.fueltype ? 'In stock': 'petrol'}}</td>
       <td width="600" height="236">{{product.desc}}</td>
       <td><button type="button" class="btn btn-secondary btn-lg" (click)="removeProduct(product.id)">Delete</button></td>
-       <td><button type="button" class="btn btn-secondary btn-lg" style="padding-right: 40px;" routerLink="/product/edit/{{product.id}}">Edit</button></td>
+       <td><button type="button" class="btn btn-secondary btn-lg" style="padding-right: 40px;" routerLink="/product/edit/{{product.id}}">  Edit</button></td>
      
       
       <!-- <td><button class="btn btn-primary" (click)="removeProduct(product.id)">Delete</button></td>
