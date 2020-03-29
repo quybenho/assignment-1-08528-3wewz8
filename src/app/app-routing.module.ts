@@ -7,6 +7,7 @@ import { ProductDetailComponent } from "./product-detail/product-detail.componen
 import { ProductManagerComponent } from "./product-manager/product-manager.component";
 import { ProductAddComponent } from "./product-add/product-add.component";
 import { ProductEditComponent } from "./product-edit/product-edit.component";
+// import ProductManager from  './product-manager/product-manager.component';
 
 
 
@@ -18,7 +19,19 @@ const routes: Routes = [
   { path: "product-add", component: ProductAddComponent },
   { path: "product/:productID", component: ProductDetailComponent },
    { path: "product/edit/:productID", component: ProductEditComponent },
-  { path: "news", component: ProductNewsComponent }
+  { path: "news", component: ProductNewsComponent },
+    
+  
+  // { path: '', redirectTo: 'home', pathMatch: 'full' },
+  // { path: 'home', component: HomeComponent },
+  // { path: 'product-manager', component: ManagerComponent,
+  //   children: [
+  //     { path: '', component: ManagerComponent },
+  //     { path: 'product-manager', component: ProductManager},
+  //     { path: "product/:productID", component: ProductDetail }
+  //   ]
+  // }
+
 ];
 
 @NgModule({
