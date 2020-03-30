@@ -130,6 +130,7 @@ h1 {
 }
 .link-container {
   text-align: center;
+  text-decoration: none;
 }
 a.more-link {
   text-transform: uppercase;
