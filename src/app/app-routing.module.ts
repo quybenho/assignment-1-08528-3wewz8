@@ -18,10 +18,10 @@ const routes: Routes = [
   { path: "product-manager", component: ProductManagerComponent },
   { path: "product-add", component: ProductAddComponent },
   { path: "product/:productID", component: ProductDetailComponent },
-   { path: "product/edit/:productID", component: ProductEditComponent },
+  { path: "product/edit/:productID", component: ProductEditComponent },
   { path: "news", component: ProductNewsComponent },
-    
-  
+
+
   // { path: '', redirectTo: 'home', pathMatch: 'full' },
   // { path: 'home', component: HomeComponent },
   // { path: 'product-manager', component: ManagerComponent,
@@ -38,4 +38,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
