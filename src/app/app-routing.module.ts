@@ -7,6 +7,8 @@ import { ProductDetailComponent } from "./product-detail/product-detail.componen
 import { ProductManagerComponent } from "./product-manager/product-manager.component";
 import { ProductAddComponent } from "./product-add/product-add.component";
 import { ProductEditComponent } from "./product-edit/product-edit.component";
+import { NotFoundComponent } from "./not-found/not-found.component";
+
 // import ProductManager from  './product-manager/product-manager.component';
 
 
@@ -20,7 +22,7 @@ const routes: Routes = [
   { path: "product/:productID", component: ProductDetailComponent },
   { path: "product/edit/:productID", component: ProductEditComponent },
   { path: "news", component: ProductNewsComponent },
-
+  { path: "**", component: NotFoundComponent }
 
   // { path: '', redirectTo: 'home', pathMatch: 'full' },
   // { path: 'home', component: HomeComponent },
