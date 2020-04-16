@@ -8,5 +8,6 @@
 .btn-2:active {
   letter-spacing: 3px;
   text-decoration: none;
+  font-weight:bold;
 }
 
