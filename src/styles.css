@@ -1,3 +1,12 @@
+.btn-2 {
+    color: black;
+}
 
 
+
+.btn-2:hover,
+.btn-2:active {
+  letter-spacing: 3px;
+  text-decoration: none;
+}
 
